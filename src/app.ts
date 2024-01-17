@@ -24,7 +24,7 @@ app.post('/chat/send', async (req, res) => {
     }
 })
 
-const port = 3000
+const port = process.env.PORT
 
 app.listen(port, () => {
     console.log(`O servidor está rodando na porta: ${port}`)
